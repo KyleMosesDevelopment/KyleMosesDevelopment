@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Circular Std Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('fonts/CircularStd-Black.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('fonts/Avenir-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir-Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('fonts/Avenir-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('fonts/Avenir-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circular Std Black'), url('fonts/Avenir-Black.woff') format('woff');
+}

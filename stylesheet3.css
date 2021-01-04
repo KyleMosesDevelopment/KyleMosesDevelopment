@@ -1,0 +1,152 @@
+body
+{
+    font-family: sans-serif;
+    text-align: left;
+    padding: 10%;
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 36pt;
+    margin-bottom: 10pt;
+}
+
+.article_title
+{
+  padding-top: 0;
+  margin-top: 0px;
+  font-size: 20pt;
+  /* font-weight: 100; */
+}
+
+.article_tile
+{
+  /* background-color: black; */
+  padding: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: .95;
+}
+
+.col1 { grid-area: col1; }
+.col2 { grid-area: col2; }
+.col3 { grid-area: col3; }
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    'col1 col2 col3'
+    'col1 col2 col3'
+    'col1 col2 col3'
+    'col1 col2 col3';
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  /* background-color: #2196F3; */
+  padding: 10px;
+}
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  /* height: 1000px; */
+}
+
+h4{
+    font-size: 12pt;
+    font-weight: 100;
+    /* margin-top: -20px; */
+}
+
+.project_img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.img_link{
+    transition: 0.5s;
+}
+
+.article_title{
+  transition: 0.3s;
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.img_link:hover .project_img{
+    transform: translateY(-5px);
+}
+
+.img_link:hover .article_title{
+    transform: translateY(-5px);
+}
+
+.back-button{
+    transition: 0.2s;
+}
+
+.back-button:hover{
+    transform: translateX(-2.5px);
+}
+
+.article_item {
+  margin-bottom: 50px;
+}
+
+.shift_down_2 {
+  margin-top: 90vh;
+}
+
+.shift_down_1 {
+  margin-top: 30vh;
+}
+
+@media screen and (max-width: 500px){
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: black;
+        text-decoration: none;
+    }
+
+    h4{
+        font-size: 12pt;
+        font-weight: 100;
+        /* margin-top: -20px; */
+    }
+
+
+}
+
+@media screen and (max-width: 900px){
+
+    .grid{
+        display: grid;
+        grid-template-areas:
+        'col1 col1 col1'
+        'col2 col2 col2'
+        'col3 col3 col3';
+    }
+
+    body {
+        padding: 3%;
+    }
+
+}

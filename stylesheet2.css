@@ -1,0 +1,130 @@
+body
+{
+    font-family: sans-serif;
+    text-align: left;
+    padding: 10%;
+}
+
+#about
+{
+    margin-top: -10px;
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+#main h2
+{
+    font-weight: bold;
+    font-size: 36pt;
+    margin-bottom: 10pt;
+}
+
+#main p
+{
+    margin-top: -10pt;
+    font-weight: 100;
+    font-size:20pt;
+}
+
+#contact_page_title
+{
+    font-size: 36pt;
+    margin-bottom: 40pt;
+}
+#contact_main h2
+{
+    font-size: 30pt;
+    margin-top: -30pt;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+/* a:hover{
+    opacity: .8;
+} */
+
+h4{
+    font-size: 12pt;
+    font-weight: 100;
+    /* margin-top: -20px; */
+}
+
+.back-button{
+    transition: 0.2s;
+}
+
+.back-button:hover{
+    transform: translateX(-2.5px);
+}
+
+.forward-button{
+    font-weight: 300;
+    font-size: 10pt;
+    transition: 0.2s;
+}
+
+.forward-button:hover{
+    transform: translateX(2.5px);
+}
+
+section{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.app_screenshot {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 80%;
+    margin: auto;
+  }
+
+@media screen and (max-width: 500px){
+    #about{
+        font-size: 18pt;
+    }
+
+    #main h2{
+    font-weight: bold;
+    font-size: 18pt;
+    margin-bottom: 10pt;
+    }
+
+    #main p{
+        margin-top: -5pt;
+        font-weight: normal;
+        font-size: 14pt;
+    }
+
+    #contact_main h2
+    {
+        font-size: 30pt;
+        margin-top: -30pt;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: black;
+        text-decoration: none;
+    }
+
+    h4{
+        font-size: 12pt;
+        font-weight: 100;
+        /* margin-top: -20px; */
+    }
+
+
+}

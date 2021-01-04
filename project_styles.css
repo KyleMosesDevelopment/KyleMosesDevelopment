@@ -1,0 +1,144 @@
+body
+{
+    font-family: sans-serif;
+    text-align: left;
+    padding: 10%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: .8;
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 36pt;
+    margin-bottom: 10pt;
+}
+
+.back-button{
+    float: left;
+    width: 100px;
+    transition: 0.2s;
+}
+
+.back-button:hover{
+    transform: translateX(-2.5px);
+}
+
+p{
+    font-size: 18pt;
+    font-weight: 100;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    width: 100%;
+}
+
+.project_img{
+    width: 100%;
+}
+
+.small_pic{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: auto;
+}
+
+.left-col{
+    grid-area: left_col;
+}
+.right-col{
+    grid-area: right_col;
+ }
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    'left_col left_col right_col right_col'
+    'left_col left_col right_col right_col'
+    'left_col left_col right_col right_col';
+
+    grid-gap: 20px;
+}
+
+.left-col-three{
+    grid-area: left_col_three;
+}
+.center-col-three{
+    grid-area: center_col_three;
+ }
+.right-col-three{
+    grid-area: right_col_three;
+ }
+
+
+.grid-three{
+    display: grid;
+    grid-template-areas:
+    'left_col_three center_col_three right_col_three'
+    'left_col_three center_col_three right_col_three'
+    'left_col_three center_col_three right_col_three' ;
+
+    grid-gap: 20px;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+    height: 0;
+    margin-bottom: 50px;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (max-width: 900px){
+
+    .grid{
+    display: grid;
+    grid-template-areas:
+    'left_col left_col left_col left_col'
+    'left_col left_col left_col left_col'
+    'right_col right_col right_col right_col'
+    'right_col right_col right_col right_col';
+
+
+    grid-gap: 20px;
+    }
+
+    .grid-three{
+        display: grid;
+        grid-template-areas:
+        'left_col_three left_col_three left_col_three'
+        'center_col_three center_col_three center_col_three'
+        'right_col_three right_col_three right_col_three' ;
+
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h2{
+        font-size: 20pt;
+    }
+
+    p{
+        font-size: 10pt;
+    }
+}
