@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kyle Moses</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="icon" href="images/logoFin.PNG">
+</head>
+<html>
+
+<body style="background-color: #DBE4E6;">
+  <div class="two_column_grid_home" id="home_menu" style="background-color: white;">
+    <div class="two_col_left_col">
+      <div class="contact_menu">
+        <li><a class="title">Kyle<br>Moses</a></li>
+        <li><a href="#about_p" class="link">About</a></li>
+        <li><a href="#Featured_Articles" class="link">Work</a></li>
+        <li><a href="Kyle_Moses_Resume.PDF" target="_blank" class="link">Resume</a></li>
+        <li><a href="https://github.com/KyleMosesDevelopment" target="_blank" class="link">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/kyle-moses-development/" target="_blank" class="link">LinkedIn</a></li>
+      </div>
+    </div>
+    <div class="two_col_right_col home_page_pic">
+      <div class="image">
+        <img src="images/profile.JPG">
+      </div>
+    </div>
+  </div>
+  <div class="single_column" id="down_arrow">
+    <a href="#about_p" class="vertical_shift">&#8964</a>
+  </div>
+  <div class="single_column" id="about_p">
+    <h3 class="title"> About</h3>
+    <p id="about">
+      Hi I'm Kyle Moses, an aspiring Software Engineer at St. Edwards University majoring in Computer Information
+      Science. I have a natural curiosity for understanding how technology and business work together. 
+        <br>
+    </p>
+    
+  </div>
+  <h2 class="title">Work</h2>
+  <div id="Featured_Articles" style="background-color: white;" class="work">
+    <div class="two_column_grid">
+      <div class="two_col_left_col">
+        <a href="UFCUInternship.html" class="article_preview_link">
+          <div class="floating_item">
+            <div id="article_preview_image">
+              <img src="images/ufcu-icon.png" class="prev_img small_pic">
+            </div>
+            <h3 class="article_preview_title">Application Development Intern</h3>
+            <h4 class="article_preview_subtitle">Front-end Web Development using React Typescript</h4>
+          </div>
+        </a>
+      </div>
+      <div class="two_col_right_col  ">
+        <a href="OpenLinkInternship.html" class="article_preview_link">
+          <div class="floating_item align_right">
+            <div id="article_preview_image">
+              <img src="images/openlink-icon.png" class="prev_img small_pic">
+            </div>
+            <br><br><br>
+            <h3 class="article_preview_title">Openlink Software Developer Intern</h3>
+            <h4 class="article_preview_subtitle">Intern writing test scripts in Java
+            </h4>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="two_column_grid">
+      <div class="two_col_left_col   ">
+        <a href="WagerCompany.html" class="article_preview_link">
+          <div class="floating_item">
+            <div id="article_preview_image">
+              <img src="images/calculator-icon.png" style="height: 200px; width: 200px;"class="prev_img small_pic">
+            </div>
+            <h3 class="article_preview_title">Wager and Company Accounting Firm, Client Assistant</h3>
+            <h4 class="article_preview_subtitle">Uploaded data using the company’s file system</h4>
+          </div>
+        </a>
+      </div>
+      <div class="two_col_right_col  ">
+        <a href="St.EdwardsAdvisor.html" class="article_preview_link">
+          <div class="floating_item align_right">
+            <div id="article_preview_image">
+              <img src="images/seu-icon.png" class="prev_img small_pic">
+            </div>
+            <h3 class="article_preview_title">St. Edwards University Student Advisor</h3>
+            <h4 class="article_preview_subtitle">Information Technology Advisor suggesting and testing software</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div><br>
+  <h2 class="title">Personal/School Projects</h2><br>
+  <h4 id="caption">This Website</h4>
+  <!-- Slideshow container -->
+  <div class="slideshow-contain" >
+    <div> 
+      <a href="https://github.com/KyleMosesDevelopment" target="_blank"><img class="mySlides fade" src="./images/thiswebsite-slidepic.PNG" ></a>
+    </div>
+    <div>
+      <a href="https://github.com/KyleMosesDevelopment/Organizational-Behavior-Project" target="_blank"><img class="mySlides fade" src="./images/arr-slidepic.PNG" ></a>
+    </div>
+    <div>
+      <a href="https://github.com/KyleMosesDevelopment/Database-Theory-Project" target="_blank"><img class="mySlides fade" src="./images/database-slidepic.PNG" ></a>
+    </div>
+    <div>
+      <a href="tictactoe.html"><img class="mySlides fade" src="./images/tictactoe-slidepic.PNG" ></a>
+    </div>
+    <div>
+      <a href="madlibs.html"><img class="mySlides fade" src="./images/madlib-slidepic.PNG" ></a>
+    </div>
+    <div>
+      <a href="https://github.com/KyleMosesDevelopment/Sorting-Visualizer" target="_blank"><img class="mySlides fade" src="./images/sort-slidepic.PNG" ></a>
+    </div>
+  
+    <button class="slideshow-button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="slideshow-button black display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+    var captionArray = ["This Website", "Organizational Behavior Consulting Project", "Database Theory Project", "DOM Traversal TicTacToe", "Madlibs", "Sorting Visualizer Java" ];
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block"; 
+      document.getElementById("caption").innerHTML = captionArray[slideIndex-1];
+    }
+
+  </script>
+  <br>
+
+  <div class="footer">
+    <div>
+      <a class="links" href="Kyle_Moses_Resume.PDF" target="_blank">Resume</a>
+      <a class="links" href="https://github.com/KyleMosesDevelopment" target="_blank">Github</a>
+      <a class="links" href="https://www.linkedin.com/in/kyle-moses-development/" target="_blank">LinkedIn</a class="links">
+      <a class="links" href="mailto:kymo2000@gmail.com" >kymo2000@gmail.com</a>
+    </div>
+  </div>
+    
+</body>
+
+</html>
